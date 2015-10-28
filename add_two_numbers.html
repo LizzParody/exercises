@@ -1,0 +1,75 @@
+<html>
+
+<head>
+	<title>my jQuery</title>
+	<style type="text/css">
+	h1{
+		color:#883AFB;
+		font-family: sans-serif;
+		font-size: 80px;
+		border: ;
+	}
+	p{
+		font-family: sans-serif;
+		font-size: 20px;
+		color: #EA59A1;
+		font-weight: bolder;
+	}
+	#calculate-sum{
+ 	width: 200px;
+ 	height: 60px;
+ 	font-size: 30px;
+ 	background-color:#60D9ED;
+ 	color:#1017FE;
+ 	font-weight: bolder;
+ 	font-family: monospace;
+
+
+}
+body{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+
+  border: none;
+  font: normal 0.5px/normal Arial, Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: -webkit-linear-gradient(135deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), -webkit-linear-gradient(45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), rgb(0, 153, 151);
+  background: -moz-linear-gradient(-45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), -moz-linear-gradient(45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), rgb(0, 153, 151);
+  background: linear-gradient(-45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), linear-gradient(45deg, rgba(0,0,0,0) 25%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.2) 75%), rgb(0, 153, 151);
+  background-position: auto auto;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 200em 200em;
+  background-size: 200em 200em;
+}
+	</style>
+
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready (function(){
+		$('#calculate-sum').click(function(){
+			var firstNumber = $('#first-number').val();
+			var secondNumber = $('#second-number').val();
+			var sum = Number(firstNumber) + Number(secondNumber);
+			alert("your sum is equal to:   " + sum + "      HURRA!!! :D");
+
+
+		});
+	});
+
+	</script>
+
+</head>
+<body align = "center">
+	<h1>Add two numbers - jQuery example</h1>
+	<p>First number: <input type = "number" id ="first-number"></p>
+	<p>Second number: <input type = "number" id = "second-number"> </p>
+	<input type = "submit" id = "calculate-sum" value = "Submit" btn btn-block>
+
+</body>
+</html>
