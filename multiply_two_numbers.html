@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+
+h1{
+  color: red;
+  font-size: 3em;
+  font-family: sans-serif;
+}
+body {background-color: #fff;
+background-image:
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+}
+p{
+  font-weight: solid;
+  font-size: 20px;
+}
+
+    </style>
+    <title>Multiply two numbers</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#calculate-product').click(function(){
+    var firstNumber = $('#first-number').val();
+    var secondNumber = $('#second-number').val();
+    var multiply = Number(firstNumber) * Number(secondNumber);
+    $('#result').text(multiply);
+  });
+});
+
+</script>
+
+  </head>
+  <body align = "center">
+    <h1>Multiply two numbers!</h1>
+    <p>First number <input type="number" id = "first-number"><br></p>
+    <p>Second number <input type="number" id = "second-number"><br></p>
+    <input type="submit" id = "calculate-product" value = "Submit">
+    <div id = result>
+
+    </div>
+  </body>
+</html>
